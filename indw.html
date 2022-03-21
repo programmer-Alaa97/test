@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Adding Dropdowns in Bootstrap 4 via Data Attributes</title>
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"> -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+<link rel="stylesheet" type="text/css" href="./public/css/reset.min.css">
+<!-- <link rel="stylesheet" type="text/css" href="./public/css/style.min.css"> -->
+<link rel="stylesheet" type="text/css" href="./public/css/ionicon.min.css">
+<link rel="stylesheet" type="text/css" href="./public/css/style.css">
+<link rel="stylesheet" href="style/d.css">
+
+<link rel="stylesheet" href="style/mystyle.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+<style>
+	.bs-example{
+    	margin: 50px;
+    }
+</style>
+
+<script>
+    window.console = window.console || function(t) {};
+  </script>
+  
+    
+    
+    <script>
+    if (document.location.search.match(/type=embed/gi)) {
+      window.parent.postMessage("resize", "*");
+    }
+  </script>
+</head>
+<body>
+
+
+
+
+<!-- Header Section -->
+<header class="header" dir="rtl">
+  <div class="container"  dir="rtl">
+    <section class="wrapper"  dir="rtl">
+      <div class="header-item-left">
+        <a href="./index.html" class="brand"><i><img src="img/logo.png" alt="" style="width: 50px;"></i></a>
+      </div>
+      <!-- Navbar Section -->
+      <div class="header-item-center">
+        <div class="overlay"></div>
+        <nav class="menu" id="menu">
+          <div class="menu-mobile-header">
+            <button type="button" class="menu-mobile-arrow"><i class="ion ion-ios-arrow-back"></i></button>
+            <div class="menu-mobile-title"></div>
+            <button type="button" class="menu-mobile-close"><i class="ion ion-ios-close"></i></button>
+          </div>
+          <ul class="menu-section">
+            
+            
+            <li class="menu-item-has-children">
+              <a href="#">الأمراض المزمنة <i class="ion ion-ios-arrow-down"></i></a>
+              <div class="menu-subs menu-column-1">
+                <ul>
+                  <li><a href="helth3.html">أمراض القلب والأوردة</a></li>
+                  <li><a href="helth5.html">امراض الكلى</a></li>
+                  <li><a href="helth7.html">أمراض الكبد</a></li>
+                  <li><a href="helth1.html">داء السكري</a></li>
+                </ul>
+              </div>
+            </li>
+          
+            <li class="menu-item-has-children">
+              <a href="#">الأمراض الإنتقالية <i class="ion ion-ios-arrow-down"></i></a>
+              <div class="menu-subs menu-column-1">
+                <ul>
+                  <li><a href="helth8.html">الحصبة</a></li>
+                  <li><a href="helth22.html">الحمى الشوكية</a></li>
+                  <li><a href="helth10.html">انفلونزا الطيور</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="menu-item-has-children">
+              <a href="#">الأمراض الوراثية <i class="ion ion-ios-arrow-down"></i></a>
+              <div class="menu-subs menu-column-1">
+                <ul>
+                  <li><a href="helth121.html">متلازمة داوون</a></li>
+                  <li><a href="helth14.html">فقر الدم المنجلي</a></li>
+                  <li><a href="helth16.html">ثلاسيميا</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="menu-item-has-children">
+              <a href="#">الأمراض المناعية <i class="ion ion-ios-arrow-down"></i></a>
+              <div class="menu-subs menu-column-1">
+                <ul>
+                  <li><a href="helth18.html">التهاب الغدة الدرقية</a></li>
+                  <li><a href="helth20.html">التهاب المفاصل</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="header-item-right">
+        <!-- <a href="#" class="menu-icon"><i class="ion ion-md-search"></i></a>
+        <a href="#" class="menu-icon"><i class="ion ion-md-heart"></i></a>
+        <a href="#" class="menu-icon"><i class="ion ion-md-cart"></i></a> -->
+        <button type="button" class="menu-mobile-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </section>
+  </div>
+</header>
+
+
+
+<script defer src="./public/js/script.js"></script>
+
+
+<div class="container border-effect">
+  <div class="row">
+      <div class="col">
+
+          <div class="img">
+             <img src="img/Group 3.png" alt="" class="img-home">
+             <!-- <img src="img/file-medical-alt-solid.png" alt="" class="img-file"> -->
+          </div>
+
+      </div>
+      <div class="col">
+          <form action="/action_page.php" method="post" dir="rtl">
+              <div class="imgcontainer">
+                 
+               <p>تسجيل الدخول</p>
+              </div>
+            
+              <div class="container-login">
+                <label for="uname" ><b>اسم المستخدم</b></label>
+                <input type="text" placeholder="ادخل الاسم " class="effect" name="uname" required>
+
+                <label for="psw"><b>كلمة المرور</b></label>
+                <input type="password" placeholder="ادخل الرمز" class="effect" name="psw" required>
+
+                <button type="submit" class="button">تسجيل</button>
+               
+              </div>
+            
+              
+            </form>
+      </div>
+  </div>
+</div> 
+
+  
+  
+
+  <footer class="mar-top-footer">
+    <div class="container">
+          <div class="row main-content">
+
+              <div class="  col-lg-4 col-sm-4">
+             
+                  <a href=""><span class="fab fa-facebook-f paddfont"></span></a>
+                  <a href=""><span class="fab fa-twitter paddfont"></span></a>
+                  <a href=""><span class="fab fa-instagram paddfont"></span></a>
+               </div>
+             
+          
+              <div class="col-lg-4 col-sm-4">
+              
+                  <span class="text padding-itme-health">Health <i class="fas fa-heart"></i></span>
+                  <span class=""></span>
+                  
+                  
+                </div>
+            
+          
+             <div class=" col-lg-4 col-sm-4">
+           
+                <span class="padding-email"><i class="far fa-envelope "></i></span><span class="ms-2"></span>contact@example.com</span>
+      
+              </div>
+              </div>
+              </div>
+              
+           </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+  </html>
